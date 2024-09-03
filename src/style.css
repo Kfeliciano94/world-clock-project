@@ -27,7 +27,7 @@ select {
   margin: 60 auto;
   background: rgb(251, 249, 251);
   padding: 30px;
-  box-shadow: rgba(100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgb(230, 207, 244) 0px 7px 29px 0px;
   border-radius: 10px;
 }
 
