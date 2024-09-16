@@ -6,22 +6,22 @@ function updateTime() {
     let londonTimeElement = londonElement.querySelector(".time");
     let londonTime = moment().tz("Europe/London");
 
-    londonDateElement.innerHTML = londonTime.format("MMMM do YYYY");
+    londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
     londonTimeElement.innerHTML = londonTime.format(
-      "h:mm:ss [<small>]A</small>"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 
   //NewYork
-  let newyorkElement = document.querySelector("#new-york");
+  let newyorkElement = document.querySelector("#new_york");
   if (newyorkElement) {
     let newyorkDateElement = newyorkElement.querySelector(".date");
     let newyorkTimeElement = newyorkElement.querySelector(".time");
     let newyorkTime = moment().tz("America/New_York");
 
-    newyorkDateElement.innerHTML = newyorkTime.format("MMMM do YYYY");
+    newyorkDateElement.innerHTML = newyorkTime.format("MMMM Do YYYY");
     newyorkTimeElement.innerHTML = newyorkTime.format(
-      "h:mm:ss [<small>]A</small>"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
